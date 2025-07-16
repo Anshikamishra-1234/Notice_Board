@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Community Notice Board</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>📌 Community Notice Board</h1>
+
+  <section>
+    <h2>📰 Notices</h2>
+    <div id="notices"></div>
+  </section>
+
+  <section>
+    <h2>✍️ Post a Notice (Admin)</h2>
+    <form id="noticeForm">
+  <textarea id="content" placeholder="Enter notice content..." required></textarea>
+  <select id="category" required>
+    <option value="">Select Category</option>
+    <option value="Announcement">Announcement</option>
+    <option value="Local Event">Local Event</option>
+    <option value="Buy/Sell/Rent">Buy/Sell/Rent</option>
+  </select>
+
+  <input type="password" id="password" placeholder="Admin Password" required />
+  <button type="submit">Post</button>
+</form>
+
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
